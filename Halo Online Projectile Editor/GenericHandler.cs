@@ -26,6 +26,12 @@ namespace Halo_Online_Projectile_Editor
             {
                 MemoryManager.WriteToAddress(addr, hexData);
             }
-        } 
+        }
+        
+        public static void ResetProjectile()
+        {
+            byte[] rawData = { 0x8B, 0x90, 0x1C, 0x01, 0x00, 0x00 };
+            MemoryManager.WriteToAddress(0xB5DBA5, rawData);
+        }
     }
 }
