@@ -512,6 +512,19 @@ namespace HaloOnlineTrainer
 
         private void jumpTrackbar_Scroll_1(object sender, EventArgs e)
         {
+            if (jumpCheck.Checked)
+            {
+                byte[] rawData = new byte[10];
+                rawData[0] = 0xB8; // mov eax
+
+                byte[] heightData = BitConverter.GetBytes((float)jumpTrackbar.Value);
+                byte[] paddingData = { 0x89, 0x45, 0xF8, 0x90, 0x90 };
+
+                heightData.CopyTo(rawData, 1);
+                paddingData.CopyTo(rawData, 5);
+
+                MemoryManager.WriteToAddress(0xBE1C23, rawData);
+            }
         }
 
         private void vehicleTurretLabel_Click(object sender, EventArgs e)
