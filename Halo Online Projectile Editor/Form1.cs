@@ -405,7 +405,6 @@ namespace HaloOnlineTrainer
         {
             if (jumpCheck.Checked)
             {
-                jumpTrackbar.Enabled = true;
                 byte[] rawData = new byte[10];
                 rawData[0] = 0xB8; // mov eax
 
@@ -420,7 +419,6 @@ namespace HaloOnlineTrainer
             }
             else
             {
-                jumpTrackbar.Enabled = false;
                 byte[] rawData = { 0xF3, 0x0F, 0x59, 0x4D, 0xF8, 0xF3, 0x0F, 0x11, 0x4D, 0xF8 };
                 MemoryManager.WriteToAddress(0xBE1C23, rawData);
                 // mulss xmm1, [ebp+var_8] - > movss [ebp+var_8], xmm1

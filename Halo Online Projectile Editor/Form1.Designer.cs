@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.spawnLabel = new System.Windows.Forms.Label();
+            this.spawnCombo = new System.Windows.Forms.ComboBox();
             this.vehicleTurretLabel = new System.Windows.Forms.Label();
             this.vehicleTurretCombo = new System.Windows.Forms.ComboBox();
             this.mapCheck = new System.Windows.Forms.CheckBox();
@@ -57,8 +59,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.jumpCheck = new System.Windows.Forms.CheckBox();
             this.jumpTrackbar = new System.Windows.Forms.TrackBar();
-            this.spawnCombo = new System.Windows.Forms.ComboBox();
-            this.spawnLabel = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -93,6 +93,29 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Projectile Selector";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // spawnLabel
+            // 
+            this.spawnLabel.AutoSize = true;
+            this.spawnLabel.Enabled = false;
+            this.spawnLabel.Location = new System.Drawing.Point(6, 45);
+            this.spawnLabel.Name = "spawnLabel";
+            this.spawnLabel.Size = new System.Drawing.Size(82, 13);
+            this.spawnLabel.TabIndex = 17;
+            this.spawnLabel.Text = "Spawn Method:";
+            // 
+            // spawnCombo
+            // 
+            this.spawnCombo.Enabled = false;
+            this.spawnCombo.FormattingEnabled = true;
+            this.spawnCombo.Items.AddRange(new object[] {
+            "Fire Weapon",
+            "Throw Frag Grenade"});
+            this.spawnCombo.Location = new System.Drawing.Point(94, 42);
+            this.spawnCombo.Name = "spawnCombo";
+            this.spawnCombo.Size = new System.Drawing.Size(149, 21);
+            this.spawnCombo.TabIndex = 16;
+            this.spawnCombo.SelectedIndexChanged += new System.EventHandler(this.spawnCombo_SelectedIndexChanged);
             // 
             // vehicleTurretLabel
             // 
@@ -664,35 +687,11 @@
             // jumpTrackbar
             // 
             this.jumpTrackbar.BackColor = System.Drawing.SystemColors.Control;
-            this.jumpTrackbar.Enabled = false;
             this.jumpTrackbar.Location = new System.Drawing.Point(116, 13);
             this.jumpTrackbar.Name = "jumpTrackbar";
             this.jumpTrackbar.Size = new System.Drawing.Size(104, 45);
             this.jumpTrackbar.TabIndex = 7;
             this.jumpTrackbar.Scroll += new System.EventHandler(this.jumpTrackbar_Scroll_1);
-            // 
-            // spawnCombo
-            // 
-            this.spawnCombo.Enabled = false;
-            this.spawnCombo.FormattingEnabled = true;
-            this.spawnCombo.Items.AddRange(new object[] {
-            "Fire Weapon",
-            "Throw Frag Grenade"});
-            this.spawnCombo.Location = new System.Drawing.Point(94, 42);
-            this.spawnCombo.Name = "spawnCombo";
-            this.spawnCombo.Size = new System.Drawing.Size(149, 21);
-            this.spawnCombo.TabIndex = 16;
-            this.spawnCombo.SelectedIndexChanged += new System.EventHandler(this.spawnCombo_SelectedIndexChanged);
-            // 
-            // spawnLabel
-            // 
-            this.spawnLabel.AutoSize = true;
-            this.spawnLabel.Enabled = false;
-            this.spawnLabel.Location = new System.Drawing.Point(6, 45);
-            this.spawnLabel.Name = "spawnLabel";
-            this.spawnLabel.Size = new System.Drawing.Size(82, 13);
-            this.spawnLabel.TabIndex = 17;
-            this.spawnLabel.Text = "Spawn Method:";
             // 
             // Form1
             // 
