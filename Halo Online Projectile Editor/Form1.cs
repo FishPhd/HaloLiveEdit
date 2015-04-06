@@ -330,6 +330,7 @@ namespace HaloOnlineTrainer
             if (mapCheck.Checked)
             {
                 GenericHandler.ResetProjectile();
+                spawnCombo.Text = "Fire Weapon";
                 projectileCombo.Text = "";
                 weaponsCombo.Text = "";
                 vehiclesCombo.Text = "";
@@ -363,8 +364,11 @@ namespace HaloOnlineTrainer
             {
                 GenericHandler.ResetProjectile();
                 sg_prev = 0x0001AD;
-                GenericHandler.SetNewProjectile(sg_prev, sg_address);
-                sg_address = 0xB5DBA5;
+                if (sg_address != 0xB5DBA5){
+                    GenericHandler.SetNewProjectile(sg_prev, sg_address);
+                    sg_address = 0xB5DBA5;
+                }
+                spawnCombo.Text = "Fire Weapon";
                 projectileCombo.Text = "";
                 weaponsCombo.Text = "";
                 vehiclesCombo.Text = "";
