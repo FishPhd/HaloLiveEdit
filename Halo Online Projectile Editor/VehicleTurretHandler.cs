@@ -71,7 +71,7 @@ namespace HaloOnlineTrainer
         public static uint SetNewProjectile(uint hex, string search_str)
         {
             byte[] hexData = BitConverter.GetBytes(hex);
-            if (search_bytes.ContainsKey(search_str))
+            if (search_str != null && search_bytes.ContainsKey(search_str))
             {
                 uint Base_Addr = MemoryManager.ReadUntilFindBytes(search_bytes[search_str]);
                 if (Base_Addr == 0) return 0;
