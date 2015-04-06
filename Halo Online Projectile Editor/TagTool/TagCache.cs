@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Halo_Online_Projectile_Editor
+namespace HaloOnlineTrainer
 {
 	/// <summary>
 	/// Provides methods for easily editing tags.dat files.

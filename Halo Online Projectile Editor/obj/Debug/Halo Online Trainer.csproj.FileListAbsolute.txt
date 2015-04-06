@@ -1,0 +1,16 @@
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\obj\Debug\Halo Online Trainer.csprojResolveAssemblyReference.cache
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\obj\Debug\HaloOnlineTrainer.Form1.resources
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\obj\Debug\HaloOnlineTrainer.Properties.Resources.resources
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\obj\Debug\Halo Online Trainer.csproj.GenerateResource.Cache
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\HaloOnlineTrainer.dll.config
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\HaloOnlineTrainer.dll
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\HaloOnlineTrainer.pdb
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\DarkPluginLib.dll
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\mscorlib.dll
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\normidna.nlp
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\normnfc.nlp
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\normnfd.nlp
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\normnfkc.nlp
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\normnfkd.nlp
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\obj\Debug\HaloOnlineTrainer.dll
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\obj\Debug\HaloOnlineTrainer.pdb

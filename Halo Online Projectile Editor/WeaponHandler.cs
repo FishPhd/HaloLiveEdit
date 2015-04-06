@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Halo_Online_Projectile_Editor
+namespace HaloOnlineTrainer
 {
     public class WeaponHandler : GenericHandler
     {
@@ -55,7 +55,7 @@ namespace Halo_Online_Projectile_Editor
             0x001525, // Plasma Rifle (default) 42                  
             0x001590, // Plasma Rifle (gold) 43                     
             0x0014F7, // Plasma Pistol (default) 44                 
-            0x001595, // Plasma Pistol (gold) 465                   
+            0x001595, // Plasma Pistol (gold) 45                 
             0x0015A2, // Flag 46                                    
             0x0015A3, // Skull 47                                   
             0x0015A4, // Bomb 48                                    

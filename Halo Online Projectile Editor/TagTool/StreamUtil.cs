@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 
-namespace Halo_Online_Projectile_Editor
+namespace HaloOnlineTrainer
 {
 	static class StreamUtil
 	{

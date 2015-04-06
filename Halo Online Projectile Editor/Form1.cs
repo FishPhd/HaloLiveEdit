@@ -8,10 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Halo_Online_Projectile_Editor.TagTool;
+using HaloOnlineTrainer.TagTool;
 
 
-namespace Halo_Online_Projectile_Editor
+namespace HaloOnlineTrainer
 {
     public partial class Form1 : Form
     {
@@ -19,6 +19,43 @@ namespace Halo_Online_Projectile_Editor
         {
             InitializeComponent();
             TagTool.Run.Launch();
+
+            weaponsCombo.Items.Clear();
+            vehiclesCombo.Items.Clear();
+            propCombo.Items.Clear();
+            projectileCombo.Items.Clear();
+            miscCombo.Items.Clear();
+
+            //Weapons
+            for (int i = 0; i <= 56; i++)
+            {
+                weaponsCombo.Items.Add(WeaponHandler.list[i]);
+            }
+            //Vehicles
+            for (int i = 0; i <= 20; i++)
+            {
+                vehiclesCombo.Items.Add(VehicleHandler.list[i]);
+            }
+            //Projectiles 32-48 Added in 0.1.2
+            for (int i = 0; i <= 48; i++)
+            {
+                projectileCombo.Items.Add(ProjectileHandler.list[i]);
+            }
+            //Props 45-56 Added in 0.1.4
+            for (int i = 0; i <= 56; i++)
+            {
+                propCombo.Items.Add(PropHandler.list[i]);
+            }
+            //Armor 
+            for (int i = 0; i <= 26; i++)
+            {
+                armorCombo.Items.Add(ArmorHandler.list[i]);
+            }
+            //Equipment/Bipeds (Added in 0.1.4)
+            for (int i = 0; i <= 52; i++)
+            {
+                miscCombo.Items.Add(MiscHandler.list[i]);
+            }
         }
 
         // Used for reseting vehicles and grenade spawn

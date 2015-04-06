@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Halo_Online_Projectile_Editor
+namespace HaloOnlineTrainer
 {
 	/// <summary>
 	/// Represents a magic number which looks like a string.

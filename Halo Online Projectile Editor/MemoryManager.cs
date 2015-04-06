@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
-namespace Halo_Online_Projectile_Editor
+namespace HaloOnlineTrainer
 {
     class MemoryManager
     {

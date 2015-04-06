@@ -7,14 +7,14 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Halo Online Trainer.exe.manifest" size="25192">
+    <dependentAssembly dependencyType="install" codebase="Halo Online Trainer.exe.manifest" size="25869">
       <assemblyIdentity name="Halo Online Trainer.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>RoC0sCNPKn10L52YckaWxsKoyvbBJP1pWYlBRvZC+hw=</dsig:DigestValue>
+        <dsig:DigestValue>pmfwq8f4JQiUU9ixXFfJAKDad5zjWHOd+mTMnFRZ2iw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

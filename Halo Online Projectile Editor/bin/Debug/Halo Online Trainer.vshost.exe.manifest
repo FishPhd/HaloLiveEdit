@@ -4,7 +4,7 @@
   <description asmv2:iconFile="Beat down.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Halo Online Trainer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="Halo Online Trainer" version="0.2.2.0" language="neutral" processorArchitecture="msil" />
     <commandLine file="Halo Online Trainer.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -388,14 +388,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Halo Online Trainer.exe" size="395264">
-      <assemblyIdentity name="Halo Online Trainer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DarkPluginLib.dll" size="5120">
+      <assemblyIdentity name="DarkPluginLib" version="1.0.0.0" publicKeyToken="AC2E28FA7F558FD5" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+YMy8NemymcnswXFXyl6ey+94gwegnzJPlFxI5TkBeQ=</dsig:DigestValue>
+        <dsig:DigestValue>4vIduFAereyCjJBs8Ly/gxXGrbhUxeR2S959bT9aSmg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Halo Online Trainer.exe" size="396800">
+      <assemblyIdentity name="Halo Online Trainer" version="0.2.2.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>aJc/vCSWhXUIwcV19E94jqikH98UIn0t+rwasVs6ekU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

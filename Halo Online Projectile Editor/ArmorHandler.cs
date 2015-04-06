@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Halo_Online_Projectile_Editor
+namespace HaloOnlineTrainer
 {
     public class ArmorHandler : GenericHandler
     {

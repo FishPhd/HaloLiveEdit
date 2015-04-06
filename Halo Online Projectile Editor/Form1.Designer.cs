@@ -1,4 +1,4 @@
-﻿namespace Halo_Online_Projectile_Editor
+﻿namespace HaloOnlineTrainer
 {
     partial class Form1
     {
@@ -478,8 +478,8 @@
             "Sniper                    ",
             "Spartan Laser              ",
             "Rocker Launcher         ",
-            "Needler                     ",
-            "Fuel Rod                  ",
+            "Needler",
+            "Fuel Rod",
             "Brute Shot              ",
             "Shotgun   ",
             "Sentinel Beam       "});
@@ -618,7 +618,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Halo_Online_Projectile_Editor.Properties.Resources.banner;
+            this.pictureBox1.Image = global::HaloOnlineTrainer.Properties.Resources.banner;
             this.pictureBox1.Location = new System.Drawing.Point(-127, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(486, 149);

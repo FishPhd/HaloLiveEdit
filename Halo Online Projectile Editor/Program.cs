@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Halo_Online_Projectile_Editor
+namespace HaloOnlineTrainer
 {
     static class Program
     {

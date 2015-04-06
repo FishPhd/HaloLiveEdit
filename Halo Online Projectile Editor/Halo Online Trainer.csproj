@@ -5,10 +5,10 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{90DE8810-0BA5-4BD5-975D-C8BDDF1E0965}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Halo_Online_Projectile_Editor</RootNamespace>
-    <AssemblyName>Halo Online Trainer</AssemblyName>
+    <RootNamespace>HaloOnlineTrainer</RootNamespace>
+    <AssemblyName>HaloOnlineTrainer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
@@ -70,10 +70,13 @@
     </StartupObject>
   </PropertyGroup>
   <PropertyGroup />
-  <PropertyGroup>
-    <NoWin32Manifest>true</NoWin32Manifest>
-  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
   <ItemGroup>
+    <Reference Include="DarkPluginLib">
+      <HintPath>..\..\..\..\Desktop\toolkit\DarkPluginLib.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -96,6 +99,7 @@
     <Compile Include="TagTool\StreamUtil.cs" />
     <Compile Include="TagTool\TagCache.cs" />
     <Compile Include="TagTool\TagList.cs" />
+    <Compile Include="ToolKit.cs" />
     <Compile Include="VehicleHandler.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

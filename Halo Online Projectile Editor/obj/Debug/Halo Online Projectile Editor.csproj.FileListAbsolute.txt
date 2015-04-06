@@ -1,7 +1,3 @@
-C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\Halo Online Trainer.exe.config
-C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\Halo Online Trainer.exe.manifest
-C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\Halo Online Trainer.application
-C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\Halo Online Trainer.exe
 C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\Halo Online Trainer.pdb
 C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\mscorlib.dll
 C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\normidna.nlp
@@ -10,10 +6,16 @@ C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\
 C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\normnfkc.nlp
 C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\normnfkd.nlp
 C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\obj\Debug\Halo Online Projectile Editor.csprojResolveAssemblyReference.cache
-C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\obj\Debug\Halo_Online_Projectile_Editor.Form1.resources
-C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\obj\Debug\Halo_Online_Projectile_Editor.Properties.Resources.resources
 C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\obj\Debug\Halo Online Projectile Editor.csproj.GenerateResource.Cache
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\obj\Debug\Halo Online Trainer.pdb
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\obj\Debug\HaloOnlineTrainer.Form1.resources
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\obj\Debug\HaloOnlineTrainer.Properties.Resources.resources
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\DarkPluginLib.dll
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\Halo Online Trainer.exe.config
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\Halo Online Trainer.exe.manifest
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\Halo Online Trainer.application
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\Halo Online Trainer.exe
 C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\obj\Debug\Halo Online Trainer.exe.manifest
 C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\obj\Debug\Halo Online Trainer.application
 C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\obj\Debug\Halo Online Trainer.exe
-C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\obj\Debug\Halo Online Trainer.pdb
+C:\Users\Samuel\Documents\GitHub\HaloLiveEdit\Halo Online Projectile Editor\bin\Debug\HaloOnlineTrainer.exe.config
