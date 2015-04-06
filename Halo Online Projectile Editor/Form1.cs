@@ -473,7 +473,7 @@ namespace HaloOnlineTrainer
         }
         private void aboutBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Halo Online Trainer \r\n\r\nCreated by: \r\nRazzile \r\nNexusAU \r\nFeesh \r\nFishPhd \r\nBivi \r\nShockfire \r\nand many more from the ElDorito IRC \nVersion 0.3.0", "About/Version");
+            MessageBox.Show("Halo Online Trainer \r\n\r\nCreated by: \r\nRazzile \r\nNexusAU \r\nFeesh \r\nFishPhd \r\nBivi \r\nShockfire \r\nand many more from the ElDorito IRC \nVersion 0.3.1", "About/Version");
         }
 
         // No references

@@ -388,14 +388,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HaloOnlineTrainer.exe" size="396288">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HaloOnlineTrainer.exe" size="396800">
       <assemblyIdentity name="HaloOnlineTrainer" version="0.3.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0k8HTFeDPY2l7hE91DyPj2C69VXdys8Awa0GhgMjo7E=</dsig:DigestValue>
+        <dsig:DigestValue>ZK8egb0RXMapkMLjTtK25RNgZGBIYVLYgAcXWXVaYGQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
