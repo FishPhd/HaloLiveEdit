@@ -325,7 +325,7 @@ namespace HaloOnlineTrainer
                 armorLabel.Enabled = true;
                 propLabel.Enabled = true;
                 vehiclesLabel.Enabled = true;
-                vehicleTurretCombo.Enabled = true;
+                vehicleTurretCombo.Enabled = (vehiclesCombo.SelectedItem != null && VehicleTurretHandler.accept_list.Contains((string)vehiclesCombo.SelectedItem));
                 vehicleTurretLabel.Enabled = true;
             }
             else
