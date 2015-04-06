@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.grenadeSpawnCheck = new System.Windows.Forms.CheckBox();
             this.vehicleTurretLabel = new System.Windows.Forms.Label();
             this.vehicleTurretCombo = new System.Windows.Forms.ComboBox();
             this.mapCheck = new System.Windows.Forms.CheckBox();
@@ -58,6 +57,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.jumpCheck = new System.Windows.Forms.CheckBox();
             this.jumpTrackbar = new System.Windows.Forms.TrackBar();
+            this.spawnCombo = new System.Windows.Forms.ComboBox();
+            this.spawnLabel = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -67,7 +68,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.grenadeSpawnCheck);
+            this.groupBox2.Controls.Add(this.spawnLabel);
+            this.groupBox2.Controls.Add(this.spawnCombo);
             this.groupBox2.Controls.Add(this.vehicleTurretLabel);
             this.groupBox2.Controls.Add(this.vehicleTurretCombo);
             this.groupBox2.Controls.Add(this.mapCheck);
@@ -86,28 +88,17 @@
             this.groupBox2.Controls.Add(this.projectileCombo);
             this.groupBox2.Location = new System.Drawing.Point(12, 253);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(249, 335);
+            this.groupBox2.Size = new System.Drawing.Size(249, 336);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Projectile Selector";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // grenadeSpawnCheck
-            // 
-            this.grenadeSpawnCheck.AutoSize = true;
-            this.grenadeSpawnCheck.Location = new System.Drawing.Point(9, 42);
-            this.grenadeSpawnCheck.Name = "grenadeSpawnCheck";
-            this.grenadeSpawnCheck.Size = new System.Drawing.Size(137, 17);
-            this.grenadeSpawnCheck.TabIndex = 16;
-            this.grenadeSpawnCheck.Text = "Use Grenade to Spawn";
-            this.grenadeSpawnCheck.UseVisualStyleBackColor = true;
-            this.grenadeSpawnCheck.CheckedChanged += new System.EventHandler(this.grenadeSpawnCheck_CheckedChanged);
-            // 
             // vehicleTurretLabel
             // 
             this.vehicleTurretLabel.AutoSize = true;
             this.vehicleTurretLabel.Enabled = false;
-            this.vehicleTurretLabel.Location = new System.Drawing.Point(134, 206);
+            this.vehicleTurretLabel.Location = new System.Drawing.Point(134, 211);
             this.vehicleTurretLabel.Name = "vehicleTurretLabel";
             this.vehicleTurretLabel.Size = new System.Drawing.Size(35, 13);
             this.vehicleTurretLabel.TabIndex = 15;
@@ -128,7 +119,7 @@
             "Wraith (Anti-Air)",
             "Wraith (Anti-Infantry + Air)",
             "Scorpion Cannon"});
-            this.vehicleTurretCombo.Location = new System.Drawing.Point(137, 222);
+            this.vehicleTurretCombo.Location = new System.Drawing.Point(137, 227);
             this.vehicleTurretCombo.Name = "vehicleTurretCombo";
             this.vehicleTurretCombo.Size = new System.Drawing.Size(106, 21);
             this.vehicleTurretCombo.TabIndex = 14;
@@ -207,7 +198,7 @@
             "L Sandbags",
             "Long Sandbags",
             "Block Sandbags"});
-            this.propCombo.Location = new System.Drawing.Point(9, 302);
+            this.propCombo.Location = new System.Drawing.Point(9, 307);
             this.propCombo.Name = "propCombo";
             this.propCombo.Size = new System.Drawing.Size(234, 21);
             this.propCombo.TabIndex = 12;
@@ -217,7 +208,7 @@
             // 
             this.propLabel.AutoSize = true;
             this.propLabel.Enabled = false;
-            this.propLabel.Location = new System.Drawing.Point(6, 286);
+            this.propLabel.Location = new System.Drawing.Point(6, 291);
             this.propLabel.Name = "propLabel";
             this.propLabel.Size = new System.Drawing.Size(34, 13);
             this.propLabel.TabIndex = 11;
@@ -227,7 +218,7 @@
             // 
             this.armorLabel.AutoSize = true;
             this.armorLabel.Enabled = false;
-            this.armorLabel.Location = new System.Drawing.Point(6, 246);
+            this.armorLabel.Location = new System.Drawing.Point(6, 251);
             this.armorLabel.Name = "armorLabel";
             this.armorLabel.Size = new System.Drawing.Size(34, 13);
             this.armorLabel.TabIndex = 10;
@@ -265,7 +256,7 @@
             "Armor 25",
             "Armor 26",
             "Armor 27"});
-            this.armorCombo.Location = new System.Drawing.Point(9, 262);
+            this.armorCombo.Location = new System.Drawing.Point(9, 267);
             this.armorCombo.Name = "armorCombo";
             this.armorCombo.Size = new System.Drawing.Size(234, 21);
             this.armorCombo.TabIndex = 9;
@@ -275,7 +266,7 @@
             // 
             this.vehiclesLabel.AutoSize = true;
             this.vehiclesLabel.Enabled = false;
-            this.vehiclesLabel.Location = new System.Drawing.Point(6, 206);
+            this.vehiclesLabel.Location = new System.Drawing.Point(6, 211);
             this.vehiclesLabel.Name = "vehiclesLabel";
             this.vehiclesLabel.Size = new System.Drawing.Size(42, 13);
             this.vehiclesLabel.TabIndex = 8;
@@ -307,7 +298,7 @@
             "Wraith (Anti-infantry)",
             "Wraith (Anti-Air)",
             "Wraith (Anti-Infantry + Air)"});
-            this.vehiclesCombo.Location = new System.Drawing.Point(9, 222);
+            this.vehiclesCombo.Location = new System.Drawing.Point(9, 227);
             this.vehiclesCombo.Name = "vehiclesCombo";
             this.vehiclesCombo.Size = new System.Drawing.Size(131, 21);
             this.vehiclesCombo.TabIndex = 7;
@@ -317,7 +308,7 @@
             // 
             this.miscLabel.AutoSize = true;
             this.miscLabel.Enabled = false;
-            this.miscLabel.Location = new System.Drawing.Point(6, 164);
+            this.miscLabel.Location = new System.Drawing.Point(6, 169);
             this.miscLabel.Name = "miscLabel";
             this.miscLabel.Size = new System.Drawing.Size(94, 13);
             this.miscLabel.TabIndex = 6;
@@ -381,7 +372,7 @@
             "Headless Spartan (T Pose)",
             "ODST",
             "UNSC Marine"});
-            this.miscCombo.Location = new System.Drawing.Point(9, 180);
+            this.miscCombo.Location = new System.Drawing.Point(9, 185);
             this.miscCombo.Name = "miscCombo";
             this.miscCombo.Size = new System.Drawing.Size(234, 21);
             this.miscCombo.TabIndex = 5;
@@ -394,7 +385,7 @@
             this.selectLabel.Enabled = false;
             this.selectLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.selectLabel.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.selectLabel.Location = new System.Drawing.Point(9, 67);
+            this.selectLabel.Location = new System.Drawing.Point(9, 72);
             this.selectLabel.Name = "selectLabel";
             this.selectLabel.Size = new System.Drawing.Size(91, 15);
             this.selectLabel.TabIndex = 4;
@@ -405,7 +396,7 @@
             // 
             this.weaponLabel.AutoSize = true;
             this.weaponLabel.Enabled = false;
-            this.weaponLabel.Location = new System.Drawing.Point(6, 124);
+            this.weaponLabel.Location = new System.Drawing.Point(6, 129);
             this.weaponLabel.Name = "weaponLabel";
             this.weaponLabel.Size = new System.Drawing.Size(53, 13);
             this.weaponLabel.TabIndex = 3;
@@ -415,7 +406,7 @@
             // 
             this.projectileLabel.AutoSize = true;
             this.projectileLabel.Enabled = false;
-            this.projectileLabel.Location = new System.Drawing.Point(6, 84);
+            this.projectileLabel.Location = new System.Drawing.Point(6, 89);
             this.projectileLabel.Name = "projectileLabel";
             this.projectileLabel.Size = new System.Drawing.Size(55, 13);
             this.projectileLabel.TabIndex = 2;
@@ -483,7 +474,7 @@
             "Brute Shot              ",
             "Shotgun   ",
             "Sentinel Beam       "});
-            this.weaponsCombo.Location = new System.Drawing.Point(9, 140);
+            this.weaponsCombo.Location = new System.Drawing.Point(9, 145);
             this.weaponsCombo.Name = "weaponsCombo";
             this.weaponsCombo.Size = new System.Drawing.Size(234, 21);
             this.weaponsCombo.TabIndex = 1;
@@ -543,7 +534,7 @@
             "Plasma Shot 1",
             "Plasma Shot 2",
             "AA Wraith"});
-            this.projectileCombo.Location = new System.Drawing.Point(9, 100);
+            this.projectileCombo.Location = new System.Drawing.Point(9, 105);
             this.projectileCombo.Name = "projectileCombo";
             this.projectileCombo.Size = new System.Drawing.Size(234, 21);
             this.projectileCombo.TabIndex = 1;
@@ -560,7 +551,7 @@
             // 
             // aboutBtn
             // 
-            this.aboutBtn.Location = new System.Drawing.Point(12, 594);
+            this.aboutBtn.Location = new System.Drawing.Point(12, 595);
             this.aboutBtn.Name = "aboutBtn";
             this.aboutBtn.Size = new System.Drawing.Size(249, 23);
             this.aboutBtn.TabIndex = 6;
@@ -619,7 +610,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::HaloOnlineTrainer.Properties.Resources.banner;
-            this.pictureBox1.Location = new System.Drawing.Point(-127, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(-113, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(486, 149);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -662,7 +653,7 @@
             // 
             this.jumpCheck.AutoSize = true;
             this.jumpCheck.ForeColor = System.Drawing.Color.Black;
-            this.jumpCheck.Location = new System.Drawing.Point(124, 11);
+            this.jumpCheck.Location = new System.Drawing.Point(126, 44);
             this.jumpCheck.Name = "jumpCheck";
             this.jumpCheck.Size = new System.Drawing.Size(85, 17);
             this.jumpCheck.TabIndex = 3;
@@ -674,11 +665,34 @@
             // 
             this.jumpTrackbar.BackColor = System.Drawing.SystemColors.Control;
             this.jumpTrackbar.Enabled = false;
-            this.jumpTrackbar.Location = new System.Drawing.Point(117, 34);
+            this.jumpTrackbar.Location = new System.Drawing.Point(116, 13);
             this.jumpTrackbar.Name = "jumpTrackbar";
             this.jumpTrackbar.Size = new System.Drawing.Size(104, 45);
             this.jumpTrackbar.TabIndex = 7;
             this.jumpTrackbar.Scroll += new System.EventHandler(this.jumpTrackbar_Scroll_1);
+            // 
+            // spawnCombo
+            // 
+            this.spawnCombo.Enabled = false;
+            this.spawnCombo.FormattingEnabled = true;
+            this.spawnCombo.Items.AddRange(new object[] {
+            "Fire Weapon",
+            "Throw Frag Grenade"});
+            this.spawnCombo.Location = new System.Drawing.Point(94, 42);
+            this.spawnCombo.Name = "spawnCombo";
+            this.spawnCombo.Size = new System.Drawing.Size(149, 21);
+            this.spawnCombo.TabIndex = 16;
+            this.spawnCombo.SelectedIndexChanged += new System.EventHandler(this.spawnCombo_SelectedIndexChanged);
+            // 
+            // spawnLabel
+            // 
+            this.spawnLabel.AutoSize = true;
+            this.spawnLabel.Enabled = false;
+            this.spawnLabel.Location = new System.Drawing.Point(6, 45);
+            this.spawnLabel.Name = "spawnLabel";
+            this.spawnLabel.Size = new System.Drawing.Size(82, 13);
+            this.spawnLabel.TabIndex = 17;
+            this.spawnLabel.Text = "Spawn Method:";
             // 
             // Form1
             // 
@@ -735,7 +749,8 @@
         private System.Windows.Forms.TrackBar jumpTrackbar;
         private System.Windows.Forms.Label vehicleTurretLabel;
         private System.Windows.Forms.ComboBox vehicleTurretCombo;
-        private System.Windows.Forms.CheckBox grenadeSpawnCheck;
+        private System.Windows.Forms.Label spawnLabel;
+        private System.Windows.Forms.ComboBox spawnCombo;
     }
 }
 

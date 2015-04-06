@@ -1,4 +1,5 @@
-﻿using DarkPluginLib;
+﻿/*
+using DarkPluginLib;
 using System;
 using System.Reflection;
 using System.Windows.Forms;
@@ -86,3 +87,4 @@ namespace PluginExample
     }
 
 }
+*/

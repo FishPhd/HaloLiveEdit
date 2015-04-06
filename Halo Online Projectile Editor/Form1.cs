@@ -20,6 +20,8 @@ namespace HaloOnlineTrainer
             InitializeComponent();
             TagTool.Run.Launch();
 
+            spawnCombo.SelectedIndex = 0;
+
             weaponsCombo.Items.Clear();
             vehiclesCombo.Items.Clear();
             propCombo.Items.Clear();
@@ -120,9 +122,18 @@ namespace HaloOnlineTrainer
 
         private void grenadeSpawnCheck_CheckedChanged(object sender, EventArgs e)
         {
+            /*
+            uint addr = 0xBA3C01;
+            
             if (grenadeSpawnCheck.Checked)
             {
                 sg_address = VehicleTurretHandler.SetNewProjectile(sg_prev, "Grenade");
+
+                //Unlimited grenades
+                grenadeCheck.Checked = true;
+                byte[] data = { 0x90, 0x90, 0x90, 0x90, 0x90, 0x90 };
+                // nop, nop, nop, nop, nop, nop
+                MemoryManager.WriteToAddress(addr, data);
             }
             else // could lead to issues (shooting grenades) if spammed
             {
@@ -138,7 +149,14 @@ namespace HaloOnlineTrainer
                 vehicleTurretCombo.Text = "";
                 armorCombo.Text = "";
                 selectLabel.Text = "Selected: Default Grenade";
+
+                //Limited grenades
+                grenadeCheck.Checked = false;
+                byte[] data = { 0x88, 0x81, 0x20, 0x03, 0x00, 0x00 };
+                // mov [ecx+320h], al
+                MemoryManager.WriteToAddress(addr, data);
             }
+             * */
         }
 
         private void projectileCombo_SelectedIndexChanged(object sender, EventArgs e)
@@ -311,6 +329,16 @@ namespace HaloOnlineTrainer
 
             if (mapCheck.Checked)
             {
+                GenericHandler.ResetProjectile();
+                projectileCombo.Text = "";
+                weaponsCombo.Text = "";
+                vehiclesCombo.Text = "";
+                propCombo.Text = "";
+                miscCombo.Text = "";
+                vehicleTurretCombo.Text = "";
+                armorCombo.Text = "";
+                selectLabel.Text = "Selected: Default";
+
                 projectileCombo.Enabled = true;
                 weaponsCombo.Enabled = true;
                 miscCombo.Enabled = true;
@@ -327,9 +355,25 @@ namespace HaloOnlineTrainer
                 vehiclesLabel.Enabled = true;
                 vehicleTurretCombo.Enabled = (vehiclesCombo.SelectedItem != null && VehicleTurretHandler.accept_list.Contains((string)vehiclesCombo.SelectedItem));
                 vehicleTurretLabel.Enabled = true;
+                spawnLabel.Enabled = true;
+                spawnCombo.Enabled = true;
+                //grenadeSpawnCheck.Enabled = true;
             }
             else
             {
+                GenericHandler.ResetProjectile();
+                sg_prev = 0x0001AD;
+                GenericHandler.SetNewProjectile(sg_prev, sg_address);
+                sg_address = 0xB5DBA5;
+                projectileCombo.Text = "";
+                weaponsCombo.Text = "";
+                vehiclesCombo.Text = "";
+                propCombo.Text = "";
+                miscCombo.Text = "";
+                vehicleTurretCombo.Text = "";
+                armorCombo.Text = "";
+                selectLabel.Text = "Selected: Default";
+
                 projectileCombo.Enabled = false;
                 weaponsCombo.Enabled = false;
                 miscCombo.Enabled = false;
@@ -346,6 +390,9 @@ namespace HaloOnlineTrainer
                 vehiclesLabel.Enabled = false;
                 vehicleTurretCombo.Enabled = false;
                 vehicleTurretLabel.Enabled = false;
+                spawnLabel.Enabled = false;
+                spawnCombo.Enabled = false;
+                //grenadeSpawnCheck.Enabled = false;
             }
         }
 
@@ -424,7 +471,7 @@ namespace HaloOnlineTrainer
         }
         private void aboutBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Halo Online Trainer \r\n\r\nCreated by: \r\nRazzile \r\nNexusAU \r\nFeesh \r\nFishPhd \r\nBivi \r\nShockfire \r\nand many more from the ElDorito IRC \nVersion 0.2.2", "About/Version");
+            MessageBox.Show("Halo Online Trainer \r\n\r\nCreated by: \r\nRazzile \r\nNexusAU \r\nFeesh \r\nFishPhd \r\nBivi \r\nShockfire \r\nand many more from the ElDorito IRC \nVersion 0.3.0", "About/Version");
         }
 
         // No references
@@ -468,6 +515,49 @@ namespace HaloOnlineTrainer
         private void vehicleTurretLabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void spawnCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (spawnCombo.SelectedItem.ToString() == "Throw Frag Grenade")
+            {
+                GenericHandler.ResetProjectile();
+                sg_prev = 0x0001AD;
+                sg_address = VehicleTurretHandler.SetNewProjectile(sg_prev, "Grenade");
+                projectileCombo.Text = "";
+                weaponsCombo.Text = "";
+                vehiclesCombo.Text = "";
+                propCombo.Text = "";
+                miscCombo.Text = "";
+                vehicleTurretCombo.Text = "";
+                armorCombo.Text = "";
+                selectLabel.Text = "Selected: Frag Grenade";
+
+                //Unlimited grenades
+                uint addr = 0xBA3C01;
+                grenadeCheck.Checked = true;
+                byte[] data = { 0x90, 0x90, 0x90, 0x90, 0x90, 0x90 };
+                // nop, nop, nop, nop, nop, nop
+                MemoryManager.WriteToAddress(addr, data);
+            }
+            else if (spawnCombo.SelectedItem.ToString() == "Fire Weapon")
+            {
+                if (sg_address != 0xB5DBA5)
+                {
+                    sg_prev = 0x0001AD;
+                    GenericHandler.SetNewProjectile(sg_prev, sg_address);
+                    sg_address = 0xB5DBA5;
+                    vehicleTurretCombo.Enabled = false;
+                    projectileCombo.Text = "";
+                    weaponsCombo.Text = "";
+                    vehiclesCombo.Text = "";
+                    propCombo.Text = "";
+                    miscCombo.Text = "";
+                    vehicleTurretCombo.Text = "";
+                    armorCombo.Text = "";
+                    selectLabel.Text = "Selected: Default";
+                }
+            }
         }
 
         // No references
