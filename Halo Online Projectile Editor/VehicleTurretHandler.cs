@@ -18,11 +18,12 @@ namespace HaloOnlineTrainer
             0x0029ED, // Warthog (Gauss Rifle) 1
             0x00433A, // Warthog (Chaingun Snow) 2
             0x00433B, // Warthog (Gauss Rifle Snow) 3
-            0x003742, // Wraith (Mortar) 4
-            0x003743, // Wraith (Anti-infantry) 5
-            0x003744, // Wraith (Anti-Air) 6
-            0x003745, // Wraith (Anti-Infantry + Air) 7
-            0x0028C6, // Scorpion Cannon 8
+            0x0029EE, // Warthog (Troop) 4
+            0x003742, // Wraith (Mortar) 5
+            0x003743, // Wraith (Anti-infantry) 6
+            0x003744, // Wraith (Anti-Air) 7
+            0x003745, // Wraith (Anti-Infantry + Air) 8
+            0x0028C6, // Scorpion Cannon 9
         };
         public static string[] list =
         {
@@ -30,6 +31,7 @@ namespace HaloOnlineTrainer
             "Warthog (Gauss Rifle)",
             "Warthog (Chaingun Snow)",
             "Warthog (Gauss Rifle Snow)",
+            "Warthog (Troop)",
             "Wraith (Mortar)",
             "Wraith (Anti-infantry)",
             "Wraith (Anti-Air)",
