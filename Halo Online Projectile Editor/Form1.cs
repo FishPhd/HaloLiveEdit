@@ -27,36 +27,42 @@ namespace HaloOnlineTrainer
             propCombo.Items.Clear();
             projectileCombo.Items.Clear();
             miscCombo.Items.Clear();
+           vehicleTurretCombo.Items.Clear();
 
             //Weapons
-            for (int i = 0; i <= 56; i++)
+            for (int i = 0; i < WeaponHandler.list.Length; i++)
             {
                 weaponsCombo.Items.Add(WeaponHandler.list[i]);
             }
             //Vehicles
-            for (int i = 0; i <= 20; i++)
+            for (int i = 0; i < VehicleHandler.list.Length; i++)
             {
                 vehiclesCombo.Items.Add(VehicleHandler.list[i]);
             }
             //Projectiles 32-48 Added in 0.1.2
-            for (int i = 0; i <= 48; i++)
+            for (int i = 0; i < ProjectileHandler.list.Length; i++)
             {
                 projectileCombo.Items.Add(ProjectileHandler.list[i]);
             }
             //Props 45-56 Added in 0.1.4
-            for (int i = 0; i <= 56; i++)
+            for (int i = 0; i < PropHandler.list.Length; i++)
             {
                 propCombo.Items.Add(PropHandler.list[i]);
             }
             //Armor 
-            for (int i = 0; i <= 26; i++)
+            for (int i = 0; i < ArmorHandler.list.Length; i++)
             {
                 armorCombo.Items.Add(ArmorHandler.list[i]);
             }
             //Equipment/Bipeds (Added in 0.1.4)
-            for (int i = 0; i <= 52; i++)
+            for (int i = 0; i < MiscHandler.list.Length; i++)
             {
                 miscCombo.Items.Add(MiscHandler.list[i]);
+            }
+            //Vehicle Turret 
+            for (int i = 0; i < VehicleTurretHandler.list.Length; i++)
+            {
+                vehicleTurretCombo.Items.Add(VehicleTurretHandler.list[i]);
             }
         }
 
